@@ -59,7 +59,7 @@
 1/shapes = [  ]
 1/z_index = 0
 
-[sub_resource type="TileSet" id=3]
+[sub_resource type="TileSet" id=2]
 0/name = "TX Props.png 0"
 0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
@@ -551,7 +551,7 @@
 34/shapes = [  ]
 34/z_index = 0
 
-[sub_resource type="TileSet" id=6]
+[sub_resource type="TileSet" id=3]
 0/name = "TX Struct.png 0"
 0/texture = ExtResource( 14 )
 0/tex_offset = Vector2( 0, 0 )
@@ -637,7 +637,7 @@
 5/shapes = [  ]
 5/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 24.4509, 10 )
 
 [sub_resource type="TileSet" id=5]
@@ -665,7 +665,7 @@ extents = Vector2( 24.4509, 10 )
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="TileSet" id=4]
+[sub_resource type="TileSet" id=6]
 0/name = "TX Plant.png 0"
 0/texture = ExtResource( 7 )
 0/tex_offset = Vector2( 0, 0 )
@@ -924,14 +924,14 @@ tile_data = PoolIntArray( -1441787, 7, 65547, -1441786, 7, 196614, -1441785, 7, 
 
 [node name="Props-HighLevel" type="TileMap" parent="PropsTileMaps"]
 z_index = 1
-tile_set = SubResource( 3 )
+tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
 tile_data = PoolIntArray( -1441808, 0, 0, -1114123, 13, 0, -1179611, 6, 0, -1114108, 4, 0, -983053, 6, 0, -983048, 6, 0, -1048562, 34, 0, -1048561, 25, 0, -1048557, 8, 0, -1048547, 4, 0, -983026, 26, 0, -917490, 31, 0, -917488, 27, 0, -917487, 0, 0, -917485, 28, 0, -851950, 26, 0, -786424, 11, 0, -720869, 8, 0, -655346, 12, 0, -589797, 29, 0, -589795, 26, 0, -524260, 30, 0, -196567, 6, 0, -65540, 25, 0, 37, 20, 0, 41, 34, 0, 131069, 29, 0, 65577, 32, 0, 196649, 6, 0 )
 
 [node name="Props-LowLevel" type="TileMap" parent="PropsTileMaps"]
-tile_set = SubResource( 3 )
+tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
@@ -949,7 +949,7 @@ position = Vector2( 640, -512 )
 [node name="Ladders" type="Node2D" parent="."]
 
 [node name="StructTileMap" type="TileMap" parent="Ladders"]
-tile_set = SubResource( 6 )
+tile_set = SubResource( 3 )
 cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
@@ -960,7 +960,7 @@ position = Vector2( -299.208, 87.7803 )
 
 [node name="CollisionShape2D" parent="Ladders/LaddersDetection" index="0"]
 position = Vector2( 139.08, -38.8024 )
-shape = SubResource( 7 )
+shape = SubResource( 4 )
 
 [node name="StoneTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 5 )
@@ -1063,14 +1063,14 @@ z_index = 1
 
 [node name="Bushes-HighLevel" type="TileMap" parent="BushesTileMaps"]
 z_index = 1
-tile_set = SubResource( 4 )
+tile_set = SubResource( 6 )
 cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
 tile_data = PoolIntArray( -2424828, 9, 0, -2424796, 8, 0, -2293719, 20, 0, -2228222, 3, 0, -2228215, 1, 0, -2228204, 6, 0, -2228197, 17, 0, -2228190, 3, 0, -2228188, 19, 0, -2228178, 6, 0, -2162687, 4, 0, -2162671, 20, 0, -2097152, 6, 0, -2097142, 1, 0, -2097121, 18, 0, -2097116, 12, 0, -2031611, 0, 0, -2031604, 10, 0, -2031578, 13, 0, -2031575, 3, 0, -1966071, 5, 0, -1966046, 15, 0, -1114070, 4, 0, -1048539, 1, 0, -917516, 5, 0, -917513, 1, 0, -982997, 15, 0, -851981, 15, 0, -917494, 15, 0, -917484, 1, 0, -917472, 5, 0, -851951, 1, 0, -589833, 18, 0, -655326, 15, 0, -589796, 14, 0, -524280, 0, 0, -524261, 15, 0, -393230, 16, 0, -327646, 12, 0, -131081, 17, 0, 65532, 14, 0, 33, 4, 0, 36, 5, 0, 131070, 12, 0, 65577, 14, 0, 196604, 17, 0, 131111, 17, 0, 196638, 5, 0, 196645, 5, 0 )
 
 [node name="Bushes-LowLevel" type="TileMap" parent="BushesTileMaps"]
-tile_set = SubResource( 4 )
+tile_set = SubResource( 6 )
 cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
