@@ -1,9 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Texture/TX Shadow Plant.png" type="Texture" id=1]
 [ext_resource path="res://Texture/TX Plant.png" type="Texture" id=2]
 
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 17.8839
+height = 0.0
+
 [node name="Bushes-Bigger" type="StaticBody2D"]
+collision_layer = 3
+collision_mask = 4
 
 [node name="Shadow" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.470588 )
@@ -17,3 +23,5 @@ region_enabled = true
 region_rect = Rect2( 209.383, 173.655, 60.14, 63.599 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.222725, 2.6727 )
+shape = SubResource( 1 )

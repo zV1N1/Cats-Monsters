@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Texture/TX Props.png" type="Texture" id=1]
+[ext_resource path="res://Texture/TX Shadow.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15.4331, 11.3284 )
+
+[node name="Box-Bigger" type="StaticBody2D"]
+
+[node name="Shadow" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.392157 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 155.282, 13.905, 41.407, 53.414 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 155.282, 13.905, 41.407, 53.414 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.227917, 9.01443 )
+shape = SubResource( 1 )

@@ -4,7 +4,7 @@
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 10.34, 12.9009 )
+extents = Vector2( 10.34, 12.078 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "IdleDown"
@@ -196,6 +196,7 @@ start_node = "Idle"
 
 [node name="Player" type="KinematicBody2D"]
 z_index = 1
+collision_layer = 4
 script = ExtResource( 2 )
 
 [node name="Shadow" type="Sprite" parent="."]
@@ -213,7 +214,7 @@ hframes = 4
 vframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 22.5259 )
+position = Vector2( 0, 23.3687 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Texture/TX Props.png" type="Texture" id=1]
+[ext_resource path="res://Texture/TX Shadow.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 2.8236
+
+[node name="Plaque" type="StaticBody2D"]
+
+[node name="Shadow" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.470588 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, 18 )
+vframes = 2
+frame = 1
+region_enabled = true
+region_rect = Rect2( 90, 148.377, 42, 122.12 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+offset = Vector2( 0, 18 )
+vframes = 2
+frame = 1
+region_enabled = true
+region_rect = Rect2( 90, 148.377, 42, 122.12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.0743254, 21.1248 )
+shape = SubResource( 1 )
