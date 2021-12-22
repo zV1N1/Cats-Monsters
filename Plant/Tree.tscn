@@ -20,9 +20,9 @@ vframes = 3
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -48 )
 texture = ExtResource( 1 )
-offset = Vector2( 0, -15 )
+offset = Vector2( 0, -10 )
 hframes = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.625, 1.00196 )
+position = Vector2( -0.572444, 5.67945 )
 shape = SubResource( 1 )

@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/GUI/Player/assets/lifebar_bg.png" type="Texture" id=1]
+[ext_resource path="res://interface/GUI/Player/assets/lifebar_fill.png" type="Texture" id=2]
+[ext_resource path="res://interface/GUI/Player/assets/label_HP_bg.png" type="Texture" id=3]
+
+[node name="Bar" type="HBoxContainer"]
+margin_right = 500.0
+margin_bottom = 53.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Count" type="MarginContainer" parent="."]
+margin_right = 100.0
+margin_bottom = 53.0
+
+[node name="Background" type="NinePatchRect" parent="Count"]
+margin_right = 100.0
+margin_bottom = 53.0
+rect_min_size = Vector2( 100, 40 )
+texture = ExtResource( 3 )
+
+[node name="Title" type="Label" parent="Count/Background"]
+margin_left = 10.0
+margin_right = 60.0
+margin_bottom = 52.0
+text = "ENERGY"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Number" type="Label" parent="Count/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_right = -10.0
+text = "10"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gauge" type="TextureProgress" parent="."]
+margin_left = 104.0
+margin_right = 500.0
+margin_bottom = 53.0
+value = 50.0
+texture_under = ExtResource( 1 )
+texture_progress = ExtResource( 2 )

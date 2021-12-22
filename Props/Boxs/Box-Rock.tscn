@@ -1,12 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Texture/TX Props.png" type="Texture" id=1]
 [ext_resource path="res://Texture/TX Shadow.png" type="Texture" id=2]
+[ext_resource path="res://Props/Boxs/Box.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 15.3948, 12.0428 )
 
-[node name="Box-Rock" type="StaticBody2D"]
+[node name="Box-Rock" type="KinematicBody2D" groups=[
+"Boxes",
+]]
+script = ExtResource( 3 )
 
 [node name="Shadow" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.392157 )
